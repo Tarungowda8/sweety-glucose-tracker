@@ -1,0 +1,19 @@
+# Starts PostgreSQL for local development.
+#   docker compose up -d
+# Matches DATABASE_URL in server/.env.example
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: sweety-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sweety
+      POSTGRES_PASSWORD: sweety_password
+      POSTGRES_DB: sweety
+    ports:
+      - "5432:5432"
+    volumes:
+      - sweety_pgdata:/var/lib/postgresql/data
+
+volumes:
+  sweety_pgdata:
