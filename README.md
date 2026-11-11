@@ -12,6 +12,27 @@ A small web app where a diabetes patient records up to 4 blood glucose readings 
 - Reports: daily (with each reading and its slot), month-to-date, and previous month. Each shows highest, lowest, average (1 decimal) and count, with an empty state.
 - Bonus included: paginated `GET /api/readings` (`?page=1&limit=20`) and a `docker-compose.yml` for PostgreSQL.
 
+## Screenshots
+
+### Sign up
+![Register page](docs/screenshots/register.png)
+
+### Log in
+![Login page](docs/screenshots/login.png)
+
+### Dashboard: daily, month-to-date and previous month reports
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Validation errors
+![Value out of range](docs/screenshots/validation-error.png)
+![Duplicate slot](docs/screenshots/duplicate-slot.png)
+
+### Empty state for a new user
+![Empty state](docs/screenshots/empty-state.png)
+
+### Tests
+![Passing tests](docs/screenshots/tests.png)
+
 ## Project layout
 
 ```
